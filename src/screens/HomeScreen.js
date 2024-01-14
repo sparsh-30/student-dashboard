@@ -1,12 +1,16 @@
-import { View, Text } from 'react-native'
+import { ScrollView } from 'react-native'
 import Header from '../components/homescreen/Header'
 import Introduction from '../components/homescreen/Introduction'
+import QuickLinks from '../components/homescreen/QuickLinks'
+import UpcomingEvents from '../components/homescreen/UpcomingEvents'
 
 export default function HomeScreen() {
   return (
-    <View className='px-6'>
+    <ScrollView style={{paddingHorizontal:20}}>
       <Header />
       <Introduction />
-    </View>
+      <QuickLinks />
+      <UpcomingEvents />
+    </ScrollView>
   )
 }

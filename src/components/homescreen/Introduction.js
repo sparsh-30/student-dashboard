@@ -12,7 +12,7 @@ export default function Introduction() {
       </View>
 
       {/* Displaying the total attendence  */}
-      <View className='bg-primary w-full flex flex-row justify-center rounded-2xl mt-5'>
+      <View className='bg-primary w-full flex flex-row justify-center rounded-[20px] mt-5'>
         <View className='w-1/2 flex justify-center items-center'>
           <View>
             <Text className='font-poppins text-sm font-normal text-white'>
