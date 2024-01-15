@@ -1,5 +1,5 @@
 import { ScrollView } from 'react-native'
-import ReportsContainer from '../components/ReportsScreen/ReportsContainer'
+import ReportsContainer from '../components/reportscreen/ReportsContainer'
 
 export default function ReportsScreen() {
   return (

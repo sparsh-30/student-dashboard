@@ -36,7 +36,7 @@ const LinkComponent = ({ linkTitle, linkIconName }) => {
   return (
     <TouchableWithoutFeedback>
       <View className='h-[75] flex justify-between items-center w-fit'>
-        <View className='w-10 h-10 flex flex-row justify-center items-center rounded-full bg-primary border-[1px] border-[#5140B1]'>
+        <View className='w-10 h-10 flex flex-row justify-center items-center rounded-full bg-primary border-[1px] border-tertiary'>
           <MaterialIcons name={linkIconName} size={24} color='white' />
         </View>
         <Text className='text-[13px] font-poppins text-textSecondary'>

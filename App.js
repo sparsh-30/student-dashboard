@@ -3,7 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useFonts } from 'expo-font';
 import BottomTabs from './src/navigators/BottomTabs';
-import ReportsScreen from './src/screens/ReportsScreen';
+import NotificationsScreen from './src/screens/NotificationsScreen'
 
 export default function App() {
   
@@ -20,7 +20,7 @@ export default function App() {
       <StatusBar backgroundColor='white' />
       <SafeAreaView style={{flex:1}}>
         {/* <BottomTabs /> */}
-        <ReportsScreen />
+        <NotificationsScreen />
       </SafeAreaView>
     </NavigationContainer>
   );
