@@ -6,7 +6,7 @@ import UpcomingEvents from '../components/homescreen/UpcomingEvents'
 
 export default function HomeScreen() {
   return (
-    <ScrollView style={{paddingHorizontal:20}}>
+    <ScrollView style={{paddingHorizontal:20,backgroundColor:'white'}}>
       <Header />
       <Introduction />
       <QuickLinks />

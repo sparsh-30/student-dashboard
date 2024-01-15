@@ -1,8 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
-import { Text } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useFonts } from 'expo-font';
-import HomeScreen from './src/screens/HomeScreen';
+import BottomTabs from './src/navigators/BottomTabs';
+import ReportsScreen from './src/screens/ReportsScreen';
 
 export default function App() {
   
@@ -15,9 +16,12 @@ export default function App() {
   }
 
   return (
-    <SafeAreaView style={{backgroundColor:'white',flex:1}}>
-      <HomeScreen />
+    <NavigationContainer>
       <StatusBar backgroundColor='white' />
-    </SafeAreaView>
+      <SafeAreaView style={{flex:1}}>
+        {/* <BottomTabs /> */}
+        <ReportsScreen />
+      </SafeAreaView>
+    </NavigationContainer>
   );
 }
