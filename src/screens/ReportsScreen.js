@@ -1,10 +1,10 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { ScrollView } from 'react-native'
+import ReportsContainer from '../components/ReportsScreen/ReportsContainer'
 
 export default function ReportsScreen() {
   return (
-    <View>
-      <Text>ReportsScreen</Text>
-    </View>
+    <ScrollView style={{backgroundColor:'white',paddingHorizontal:20}}>
+      <ReportsContainer />
+    </ScrollView>
   )
 }
