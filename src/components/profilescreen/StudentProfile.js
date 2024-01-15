@@ -16,7 +16,7 @@ export default function StudentProfile() {
   return (
     <View>
       {/* Displaying student name and profile image */}
-      <View className="px-2 my-8 flex-row justify-between items-center">
+      <View className="px-2 mb-8 flex-row justify-between items-center">
         <Text className="text-2xl font-poppins font-medium">{studentDetails.name}</Text>
         <View>
             <Image source={Avatar} className="w-[56] h-[56] rounded-full" />

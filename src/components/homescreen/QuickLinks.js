@@ -6,7 +6,7 @@ import { useNavigation } from '@react-navigation/native';
 export default function QuickLinks() {
   // The array consisting of the name of the link and icon
   const quickLinksData = [
-    { linkTitle: 'Report', linkIconName: 'article', navigateTo: 'reports' },
+    { linkTitle: 'Report', linkIconName: 'article', navigateTo: 'Reports' },
     { linkTitle: 'Syllabus', linkIconName: 'note', navigateTo: '' },
     { linkTitle: 'Unit Test', linkIconName: 'square-foot', navigateTo: '' },
     { linkTitle: 'Payment', linkIconName: 'credit-card', navigateTo: '' },

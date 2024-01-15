@@ -3,6 +3,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomeScreen from './../screens/HomeScreen';
 import EventsScreen from './../screens/EventsScreen';
 import ProfileScreen from './../screens/ProfileScreen';
+import CustomHeader from './../components/CustomHeader';
 import { MaterialIcons } from '@expo/vector-icons';
 
 const Tab = createBottomTabNavigator();
@@ -12,26 +13,25 @@ export default function BottomTabs() {
     <View className='flex-1'>
       <Tab.Navigator
         screenOptions={() => ({
-          tabBarHideOnKeyboard: true,
           tabBarStyle: {
             position: 'absolute',
             bottom: 20,
             left: 20,
             right: 20,
-            elevation: 5,
             backgroundColor: 'white',
             borderRadius: 16,
             height: 70,
             zIndex: 300,
           },
           tabBarShowLabel: false,
-          headerShown: false,
+          // headerShown: true,
         })}
       >
         <Tab.Screen
           name='HomeScreen'
           component={HomeScreen}
           options={{
+            headerShown: false,
             tabBarIcon: ({ focused }) => (
               <View
                 style={{
@@ -49,7 +49,7 @@ export default function BottomTabs() {
           name='EventsScreen'
           component={EventsScreen}
           options={{
-            headerShown: true,
+            header: ()=> <CustomHeader headerTitle="Events" />,
             tabBarIcon: ({ focused }) => (
               <View
                 style={{
@@ -67,6 +67,7 @@ export default function BottomTabs() {
           name='ProfileScreen'
           component={ProfileScreen}
           options={{
+            header: ()=> <CustomHeader headerTitle="Profile" />,
             tabBarIcon: ({ focused }) => (
               <View
                 style={{
