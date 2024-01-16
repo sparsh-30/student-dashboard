@@ -5,7 +5,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { Provider } from 'react-redux';
 import store from './src/store/store';
 import { useFonts } from 'expo-font';
-import StackNavigator from './src/navigators/StackNavigator';
+import Index from './src';
 
 export default function App() {
   // Adding font 'Poppins'
@@ -24,7 +24,7 @@ export default function App() {
           hidden={Platform.OS === 'ios' ? true : false}
         />
         <SafeAreaView style={{ flex: 1 }}>
-          <StackNavigator />
+          <Index />
         </SafeAreaView>
       </Provider>
     </NavigationContainer>
