@@ -1,10 +1,18 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { ScrollView, StyleSheet } from 'react-native';
+import UpcomingEvents from '../components/homescreen/UpcomingEvents';
 
 export default function EventsScreen() {
   return (
-    <View className="flex-1 bg-white">
-      <Text>EventsScreen</Text>
-    </View>
-  )
+    <ScrollView style={styles.container}>
+      <UpcomingEvents />
+    </ScrollView>
+  );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: 'white',
+    flex: 1,
+    paddingHorizontal: 20,
+  },
+});

@@ -81,3 +81,4 @@ const EventComponent = ({
     </View>
   );
 };
+export { EventComponent };
