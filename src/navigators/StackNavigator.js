@@ -4,7 +4,6 @@ import ReportsScreen from './../screens/ReportsScreen';
 import NotificationsScreen from './../screens/NotificationsScreen';
 import CustomHeader from '../components/CustomHeader';
 
-
 const Stack = createNativeStackNavigator();
 
 export default function StackNavigator() {
@@ -20,12 +19,12 @@ export default function StackNavigator() {
       />
       <Stack.Screen
         name='Reports'
-        options={{ header: () => <CustomHeader headerTitle="Report" /> }}
+        options={{ header: () => <CustomHeader headerTitle='Report' /> }}
         component={ReportsScreen}
       />
       <Stack.Screen
         name='Notifications'
-        options={{ header: () => <CustomHeader headerTitle="Notifications" /> }}
+        options={{ header: () => <CustomHeader headerTitle='Notifications' /> }}
         component={NotificationsScreen}
       />
     </Stack.Navigator>

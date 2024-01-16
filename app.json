@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "StuDash",
-    "slug": "StuDash",
+    "name": "Student Dashboard",
+    "slug": "student-dashboard",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -25,6 +25,17 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "bfd15bd0-be60-4c08-99b5-2166a2dbb1c6"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/bfd15bd0-be60-4c08-99b5-2166a2dbb1c6"
     }
   }
 }
