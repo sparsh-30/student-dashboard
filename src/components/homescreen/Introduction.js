@@ -1,14 +1,17 @@
 import { View, Text } from 'react-native';
 import { Entypo } from '@expo/vector-icons';
 import { ProgressCircle } from 'react-native-svg-charts';
+import { useSelector } from 'react-redux';
 
 export default function Introduction() {
+  const studentName = useSelector((state) => state.studentDetails.name);
+
   return (
     <View>
       {/* Displaying username */}
       <View>
         <Text className='font-poppins text-sm font-normal'>Welcome back,</Text>
-        <Text className='font-poppins text-2xl font-medium'>Amit Patel</Text>
+        <Text className='font-poppins text-2xl font-medium'>{studentName}</Text>
       </View>
 
       {/* Displaying the total attendence  */}

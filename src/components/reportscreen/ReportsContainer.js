@@ -1,12 +1,9 @@
 import { View } from 'react-native';
 import Report from './Report';
+import { useSelector } from 'react-redux';
 
 export default function ReportsContainer() {
-  const allReports = [
-    { reportName: 'Mid-terms9324.pdf', reportLink: '' },
-    { reportName: 'Unit-test1_9324.pdf', reportLink: '' },
-    { reportName: 'Unit-test2_9324.pdf', reportLink: '' },
-  ];
+  const allReports = useSelector((state) => state.studentDetails.reports);
 
   return (
     <View>
