@@ -1,4 +1,4 @@
-import { View, ActivityIndicator } from 'react-native';
+import { View } from 'react-native';
 import { useEffect, useState } from 'react';
 import { getDoc, doc } from 'firebase/firestore';
 import { db } from './../firebase';
@@ -11,7 +11,7 @@ export default function Index() {
   const dispatch = useDispatch();
   const [loading, setLoading] = useState(true);
 
-  // This is the ID that is used to fetch a particular document from firebase which will be assigned when a user logs in
+  // This is the ID that is used to fetch a particular document from firebase which will be assigned when a new user logs in
   const documentID = '0aB3eiU3dafwCmulszK6';
 
   const fetchStudentData = async () => {

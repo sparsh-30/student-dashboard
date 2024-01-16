@@ -1,4 +1,4 @@
-import { View, ActivityIndicator } from 'react-native';
+import { View } from 'react-native';
 import { useEffect, useState } from 'react';
 import { db } from '../../../firebase';
 import { collection, getDocs, query, orderBy } from 'firebase/firestore';
@@ -24,7 +24,7 @@ export default function NotificationsContainer() {
 
   useEffect(() => {
     getAllNotifications();
-  }, []);
+  }, [notificationsArray]);
 
   return (
     <View className="flex-1 justify-center items-center">
@@ -38,7 +38,7 @@ export default function NotificationsContainer() {
                 key={index}
                 notificationContent={notificationObject.notificationContent}
                 notificationDate={notificationObject.notificationDate}
-                notificationPending={true}
+                notificationPending={index<=1?true:false}
               />
             );
           })}
